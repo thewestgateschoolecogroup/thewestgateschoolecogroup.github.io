@@ -256,6 +256,10 @@
                 padding: 10px;
                 border-radius: 15px;
                 background-color: white;
+                color: black;
+            }
+            .f{
+                font-size: 50px;
             }
         </style>
         <script src="main.js"></script>
@@ -324,10 +328,10 @@
             <div id="feedbox" class="st">
                 <h5 id="title">Feedback</h5>
                 <form id="feedbackForm">
-                    <input id="text" type="text" required placeholder="Full Name...">
-                    <input id="email" type="email" required placeholder="Email...">
-                    <textarea type="text" id="feedback" required rows="30" placeholder="Enter some feedback..."></textarea>
-                    <input type="submit" required id="submit">
+                    <input class="f" id="text" type="text" required placeholder="Full Name...">
+                    <input class="f" id="email" type="email" required placeholder="Email...">
+                    <textarea class="f" type="text" id="feedback" required rows="15" placeholder="Enter some feedback..."></textarea>
+                    <input class="f" type="submit" required id="submit">
                 </form>
             </div>
             <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
