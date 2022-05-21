@@ -210,7 +210,7 @@
             }
             #feedback{
                 width: 80vw;
-                margin-top: 5vw;
+                margin-top: 2vw;
                 margin-bottom: 5vw;
                 border: 0;
                 border-radius: 15px;
@@ -229,7 +229,7 @@
                 margin-left: 5vw;
             }
             #text{
-                width: 38vw;
+                width: 80vw;
                 padding: 15px;
                 border: 0;
                 border-radius: 15px;
@@ -241,16 +241,17 @@
                 margin-left: 5vw;
             }
             #email{
-                width: 40vw;
+                width: 80vw;
                 padding: 15px;
                 border: 0;
+                margin-top: 2vw;
                 border-radius: 15px;
                 box-sizing: border-box;
                 font-family: monospace;
             }
             #submit{
                 font-family: monospace;
-                width: 20vw;
+                width: 80vw;
                 border: 0;
                 box-sizing: border-box;
                 padding: 10px;
@@ -259,7 +260,7 @@
                 color: black;
             }
             .f{
-                font-size: 50px;
+                font-size: 35px;
             }
         </style>
         <script src="main.js"></script>
@@ -328,7 +329,7 @@
             <div id="feedbox" class="st">
                 <h5 id="title">Feedback</h5>
                 <form id="feedbackForm">
-                    <input class="f" id="text" type="text" required placeholder="Full Name...">
+                    <input class="f" id="text" type="text" required placeholder="Full Name..."><br>
                     <input class="f" id="email" type="email" required placeholder="Email...">
                     <textarea class="f" type="text" id="feedback" required rows="15" placeholder="Enter some feedback..."></textarea>
                     <input class="f" type="submit" required id="submit">
