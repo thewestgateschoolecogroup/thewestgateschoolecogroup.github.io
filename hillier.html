@@ -79,6 +79,7 @@
             #hm{
                 height: 5vh;
                 margin-right: 5vw;
+                margin-top: 1.25vh;
             }
             #cm{
                 height: 70px;
@@ -128,7 +129,7 @@
                 font-size: min(7vw, 80px);
                 animation-name: slide;
                 animation-duration: 2s;
-                z-index: -1;
+                z-index: 15;
                 margin: auto;
             }
             #stages{
@@ -141,10 +142,9 @@
                 font-size: min(7vw, 80px);
                 animation-name: slide;
                 animation-duration: 2s;
-                animation-delay: 4s;
+                animation-delay: 3.5s;
                 animation-fill-mode: forwards;
                 opacity: 0;
-                z-index: -1;
                 margin: auto;
 
             }
@@ -165,12 +165,12 @@
                 animation-delay: 3.5s;
                 animation-fill-mode: forwards;
                 opacity: 0;
-                z-index: -1;
                 margin: auto;
 
             }
             .mot{
                 margin-left: 20px;
+                z-index: 15;
 
             }
             #sol{
@@ -198,8 +198,8 @@
                 position: fixed;
                 width: 100vw;
                 height: 100vh;
-                background-color: rgb(137, 190, 143);
-                opacity: 0;
+                background-color: rgb(241, 255, 243);
+                right: -100vw;
                 z-index: -10;
                 text-align: left;
                 font-family: Mont-ExtraLight;
