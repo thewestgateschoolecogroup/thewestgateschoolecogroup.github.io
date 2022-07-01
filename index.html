@@ -129,7 +129,7 @@
                 border: none;
             }
            #links{
-                transition: all 2s;
+                transition: all 1s;
                 position: fixed;
                 width: 100vw;
                 height: 100vh;
@@ -138,8 +138,11 @@
                 z-index: -10;
                 text-align: left;
                 font-family: Mont-ExtraLight;
-                font-size: min(10vw,60px);
+                font-size: 100px;
 
+            }
+            li{
+                margin: 100px 0;
             }
             .li{
                 transition: color 1s;
@@ -147,7 +150,7 @@
                 color:black;
             }
             .li:hover{
-                color: white;
+                color: green;
                 transition: color 1s;
             }
             ul{
@@ -219,7 +222,6 @@
         <ul>   
             <li><button onclick="hidemenu()" id="menu"><img id="cm" src="cross.png" alt="menu"></button></li>
             <li><a class="li" href="index.html">Home</a></li>
-            <li><h3 class="li">Projects</h3></li>
             <li><a class="li" href="hillier.html">Hillier Competition</a></li>
         </ul>
     </div>
