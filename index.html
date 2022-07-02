@@ -1,5 +1,6 @@
 <html>
     <head>
+       
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J2GDS31NB"></script>
         <script>
@@ -50,39 +51,12 @@
                 z-index: -1;
             }
             
-            #hm{
-                height: 50px;
-                top: -10px;
-                position: relative;
-            }
-            #cm{
-                height: 100px;
-            }
-            #top{top: 0;
-                position: sticky;
-                background-color: rgba(193, 204, 122, 0.76);
-                height: 150px;
-                text-align: right;
-                box-shadow: 0px 0px 20px #888888;
-                display: flex;
-                justify-content: space-between;
-                z-index: 100;
-            }
             body{
                 margin: 0%;
                 padding: 0%;
                 background-image: url("bg.png");
                 background-repeat: repeat;
                 background-size: 60vw;
-            }
-            #logo{
-                margin-top: 30px;
-                margin-left: 5vw;
-                height: 90px;
-                max-width: 97vw;
-                animation-name: logo;
-                animation-duration: 2s;
-
             }
             #flex{
                 margin-top: 50px;
@@ -120,40 +94,6 @@
                 z-index: -1;
                 margin: auto;
 
-            }
-            #menu{
-                margin-right: 60px;
-                margin-top: 55px;
-                margin-bottom: 35px;
-                background-color: #ffffff00;
-                border: none;
-            }
-           #links{
-                transition: all 1s;
-                position: fixed;
-                width: 100vw;
-                height: 100vh;
-                background-color: rgb(241, 255, 243);
-                right: -100vw;
-                z-index: -10;
-                text-align: left;
-                font-family: Mont-ExtraLight;
-                font-size: 100px;
-
-            }
-            .li{
-                transition: color 1s;
-                text-decoration: none;
-                color:black;
-                line-height: 200%;
-            }
-            .li:hover{
-                color: green;
-                transition: color 1s;
-            }
-            ul{
-                list-style: none;
-                line-height: 35px;
             }
             #pagetitle{
                 animation-name: slide;
@@ -212,24 +152,129 @@
                 text-decoration-color: purple;
                 color: white;
             }
+            
+        </style>
+        
+    </head>
+    <!menu!>
+    <html>
+<head>
+    <style>
+            @font-face {
+                font-family: Mont-Heavy;
+                src: url(Mont-Heavy.otf);}
+            @font-face {
+                font-family: Mont-ExtraLight;
+                src: url(Mont-ExtraLight.otf);
+            }
+        #links{
+                transition: all 1s;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(241, 255, 243);
+                right: -100vw;
+                z-index: -10;
+                text-align: left;
+                font-family: Mont-ExtraLight;
+                font-size: 500%;
+
+            }
+            #menu{
+                margin-right: 60px;
+                margin-top: 55px;
+                margin-bottom: 35px;
+                background-color: #ffffff00;
+                border: none;
+            }
+            #cm{
+                height: 10vw;
+                position: absolute;
+                right: 50px;
+            }
+            .li{
+                transition: color 1s;
+                text-decoration: none;
+                color:black;
+                line-height: 200%;
+                border-bottom: thick solid black;
+                border-bottom-style: solid;
+                margin: auto;
+            }
+            .li:hover{
+                color: green;
+                transition: color 1s;
+            }
             #mentop{
                 line-height: 150%;
             }
-        </style>
-        <script src="main.js"></script>
-    </head>
+            #top{top: 30px;
+                position: sticky;
+                background-color: rgba(193, 204, 122, 0.945);
+                height: 150px;
+                text-align: right;
+                box-shadow: 0px 0px 20px #888888;
+                display: flex;
+                justify-content: space-between;
+                z-index: 100;
+                border:0px;
+                border-radius: 25px;
+                width: 95vw;
+                margin-left: 2.5vw;
+            }
+            #logo{
+                margin-top: 30px;
+                margin-left: 5vw;
+                height: 90px;
+                max-width: 97vw;
+                animation-name: logo;
+                animation-duration: 2s;
+
+            }
+            #hm{
+                height: 50px;
+                top: -10px;
+                position: relative;
+            }
+            body, html{
+                padding: 0;
+                margin: 0;
+                font-family: Mont-ExtraLight;
+            }
+            ul{
+                list-style: none;
+                line-height: 10vh;
+                text-align: center;
+                margin: auto;
+            }
+            #vcenter{
+                margin-top: 20vh;
+            }
+            
+    </style>
+</head>
+<body>
+    <script src="main.js"></script>
     <div id="links">
+        <button onclick="hidemenu()" id="menu"><img id="cm" src="cross.png" alt="menu"></button>
+        <div id="vcenter">
         <ul>   
-            <li><button onclick="hidemenu()" id="menu"><img id="cm" src="cross.png" alt="menu"></button></li>
             <li><a class="li" href="index.html">Home</a></li>
             <li><a class="li" id="mentop" href="hillier.html">Climate Unity Project</a></li>
         </ul>
+        </div>
     </div>
     <nav id="top">
         <div><a href="index.html"><img id="logo" src="ecogroup.png" alt="logo"></a></div>
         <div><button onclick="showmenu()" id="menu"><img id="hm" src="hamburger-menu.png" alt="menu"></button></div>
     </nav>
+</body>
+    
+</html>
+    
+    <!menu!>
     <body>
+
         <div id="flex">
             <div id="pagetitle">
                 <h3>Home</h3>
