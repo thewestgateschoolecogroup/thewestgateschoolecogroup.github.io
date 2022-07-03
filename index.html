@@ -197,8 +197,6 @@
                 text-decoration: none;
                 color:black;
                 line-height: 200%;
-                border-bottom: thick solid black;
-                border-bottom-style: solid;
                 margin: auto;
             }
             .li:hover{
@@ -210,7 +208,7 @@
             }
             #top{top: 30px;
                 position: sticky;
-                background-color: rgba(193, 204, 122, 0.945);
+                background-color: rgba(193, 204, 122, 0.98);
                 height: 150px;
                 text-align: right;
                 box-shadow: 0px 0px 20px #888888;
@@ -219,8 +217,8 @@
                 z-index: 100;
                 border:0px;
                 border-radius: 25px;
-                width: 95vw;
-                margin-left: 2.5vw;
+                width: 90vw;
+                margin: auto;
             }
             #logo{
                 margin-top: 30px;
@@ -250,7 +248,12 @@
             #vcenter{
                 margin-top: 20vh;
             }
-            
+            .lisdiv{
+                width: 75vw;
+                height: 3px;
+                background-color: #a5a5a5;
+                margin: auto;
+            }
     </style>
 </head>
 <body>
@@ -260,6 +263,7 @@
         <div id="vcenter">
         <ul>   
             <li><a class="li" href="index.html">Home</a></li>
+            <div class="lisdiv"></div>
             <li><a class="li" id="mentop" href="hillier.html">Climate Unity Project</a></li>
         </ul>
         </div>
