@@ -1,3 +1,4 @@
+<!menu>
 <html>
 <head>
     <style>
@@ -28,11 +29,6 @@
                 background-color: #ffffff00;
                 border: none;
             }
-            #cm{
-                height: 10vw;
-                position: absolute;
-                right: 50px;
-            }
             .li{
                 transition: color 1s;
                 text-decoration: none;
@@ -53,9 +49,9 @@
                 height: 150px;
                 text-align: right;
                 box-shadow: 0px 0px 20px #888888;
-                display: flex;
+                display: grid;
                 justify-content: space-between;
-                z-index: 100;
+                z-index: 10000000000;
                 border:0px;
                 border-radius: 25px;
                 width: 90vw;
@@ -68,6 +64,8 @@
                 max-width: 97vw;
                 animation-name: logo;
                 animation-duration: 2s;
+                grid-row: 1;
+                grid-column: 1;
 
             }
             #hm{
@@ -95,12 +93,21 @@
                 background-color: #a5a5a5;
                 margin: auto;
             }
+            #open{
+                visibility: visible;
+                grid-row: 1;
+                grid-column: 2;
+            }
+            #close{
+                visibility: hidden;
+                grid-row: 1;
+                grid-column: 2;
+            }
     </style>
 </head>
 <body>
     <script src="main.js"></script>
     <div id="links">
-        <button onclick="hidemenu()" id="menu"><img id="cm" src="cross.png" alt="menu"></button>
         <div id="vcenter">
         <ul>   
             <li><a class="li" href="index.html">Home</a></li>
@@ -111,9 +118,10 @@
     </div>
     <nav id="top">
         <div><a href="index.html"><img id="logo" src="ecogroup.png" alt="logo"></a></div>
-        <div><button onclick="showmenu()" id="menu"><img id="hm" src="hamburger-menu.png" alt="menu"></button></div>
+        <div id="open"><button onclick="showmenu()" id="menu"><img id="hm" src="hamburger-menu.png" alt="menu"></button></div>
+        <div id="close"><button onclick="hidemenu()" id="menu"><img id="hm" src="cross.png" alt="menu"></button></div>
     </nav>
 </body>
     
 </html>
-    
+<!menu>
