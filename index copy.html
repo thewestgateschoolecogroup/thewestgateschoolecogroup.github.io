@@ -14,134 +14,134 @@
         <link rel="icon" type="x-icon" href="icon.png">
 
         <!menu>
-        <html>
-        <head>
-            <style>
-                    @font-face {
-                        font-family: Mont-Heavy;
-                        src: url(Mont-Heavy.otf);}
-                    @font-face {
-                        font-family: Mont-ExtraLight;
-                        src: url(Mont-ExtraLight.otf);
-                    }
-                #links{
-                        transition: none;
-                        position: fixed;
-                        width: 100%;
-                        height: 100%;
-                        background-color: rgb(241, 255, 243);
-                        right: -100vw;
-                        z-index: -10;
-                        text-align: left;
-                        font-family: Mont-ExtraLight;
-                        font-size: 500%;
-        
-                    }
-                    #menu{
-                        margin-right: 60px;
-                        margin-top: 55px;
-                        margin-bottom: 35px;
-                        background-color: #ffffff00;
-                        border: none;
-                    }
-                    .li{
-                        transition: color 1s;
-                        text-decoration: none;
-                        color:black;
-                        line-height: 200%;
-                        margin: auto;
-                    }
-                    .li:hover{
-                        color: green;
-                        transition: color 1s;
-                    }
-                    #mentop{
-                        line-height: 150%;
-                    }
-                    #top{top: 30px;
-                        position: sticky;
-                        background-color: rgba(193, 204, 122, 0.98);
-                        height: 150px;
-                        text-align: right;
-                        box-shadow: 0px 0px 20px #888888;
-                        display: grid;
-                        justify-content: space-between;
-                        z-index: 10000000000;
-                        border:0px;
-                        border-radius: 25px;
-                        width: 90vw;
-                        margin: auto;
-                    }
-                    #logo{
-                        margin-top: 30px;
-                        margin-left: 5vw;
-                        height: 90px;
-                        max-width: 97vw;
-                        animation-name: logo;
-                        animation-duration: 2s;
-                        grid-row: 1;
-                        grid-column: 1;
-        
-                    }
-                    #hm{
-                        height: 50px;
-                        top: -10px;
-                        position: relative;
-                    }
-                    body, html{
-                        padding: 0;
-                        margin: 0;
-                        font-family: Mont-ExtraLight;
-                    }
-                    ul{
-                        list-style: none;
-                        line-height: 10vh;
-                        text-align: center;
-                        margin: auto;
-                    }
-                    #vcenter{
-                        margin-top: 20vh;
-                    }
-                    .lisdiv{
-                        width: 75vw;
-                        height: 3px;
-                        background-color: #a5a5a5;
-                        margin: auto;
-                    }
-                    #open{
-                        visibility: visible;
-                        grid-row: 1;
-                        grid-column: 2;
-                    }
-                    #close{
-                        visibility: hidden;
-                        grid-row: 1;
-                        grid-column: 2;
-                    }
-            </style>
-        </head>
-        <body>
-            <script src="main.js"></script>
-            <div id="links">
-                <div id="vcenter">
-                <ul>   
-                    <li><a class="li" href="index.html">Home</a></li>
-                    <div class="lisdiv"></div>
-                    <li><a class="li" id="mentop" href="hillier.html">Climate Unity Project</a></li>
-                    <div class="lisdiv"></div>
-                    <li><a class="li" id="mentop" href="chart.html">Bottle Cap Competition</a></li>
-                </ul>
-                </div>
-            </div>
-            <nav id="top">
-                <div><a href="index.html"><img id="logo" src="ecogroup.png" alt="logo"></a></div>
-                <div id="open"><button onclick="showmenu()" id="menu"><img id="hm" src="hamburger-menu.png" alt="menu"></button></div>
-                <div id="close"><button onclick="hidemenu()" id="menu"><img id="hm" src="cross.png" alt="menu"></button></div>
-            </nav>
-        </body>
-            
-        </html>
-        <!menu>
+    <html>
+<head>
+    <style>
+            @font-face {
+                font-family: Mont-Heavy;
+                src: url(Mont-Heavy.otf);}
+            @font-face {
+                font-family: Mont-ExtraLight;
+                src: url(Mont-ExtraLight.otf);
+            }
+        #links{
+                transition: none;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(241, 255, 243);
+                right: -100vw;
+                z-index: -10;
+                text-align: left;
+                font-family: Mont-ExtraLight;
+                font-size: 500%;
+
+            }
+            #menu{
+                margin-right: 60px;
+                margin-top: 55px;
+                margin-bottom: 35px;
+                background-color: #ffffff00;
+                border: none;
+            }
+            .li{
+                transition: color 1s;
+                text-decoration: none;
+                color:black;
+                line-height: 200%;
+                margin: auto;
+            }
+            .li:hover{
+                color: green;
+                transition: color 1s;
+            }
+            #mentop{
+                line-height: 150%;
+            }
+            #top{top: 30px;
+                position: sticky;
+                background-color: rgba(193, 204, 122, 0.98);
+                height: 150px;
+                text-align: right;
+                box-shadow: 0px 0px 20px #888888;
+                display: grid;
+                justify-content: space-between;
+                z-index: 10000000000;
+                border:0px;
+                border-radius: 25px;
+                width: 90vw;
+                margin: auto;
+            }
+            #logo{
+                margin-top: 30px;
+                margin-left: 5vw;
+                height: 90px;
+                max-width: 97vw;
+                animation-name: logo;
+                animation-duration: 2s;
+                grid-row: 1;
+                grid-column: 1;
+
+            }
+            #hm{
+                height: 50px;
+                top: -10px;
+                position: relative;
+            }
+            body, html{
+                padding: 0;
+                margin: 0;
+                font-family: Mont-ExtraLight;
+            }
+            ul{
+                list-style: none;
+                line-height: 10vh;
+                text-align: center;
+                margin: auto;
+            }
+            #vcenter{
+                margin-top: 20vh;
+            }
+            .lisdiv{
+                width: 75vw;
+                height: 3px;
+                background-color: #a5a5a5;
+                margin: auto;
+            }
+            #open{
+                visibility: visible;
+                grid-row: 1;
+                grid-column: 2;
+            }
+            #close{
+                visibility: hidden;
+                grid-row: 1;
+                grid-column: 2;
+            }
+    </style>
+</head>
+<body>
+    <script src="main.js"></script>
+    <div id="links">
+        <div id="vcenter">
+        <ul>   
+            <li><a class="li" href="index.html">Home</a></li>
+            <div class="lisdiv"></div>
+            <li><a class="li" id="mentop" href="hillier.html">Climate Unity Project</a></li>
+            <div class="lisdiv"></div>
+            <li><a class="li" id="mentop" href="chart.html">Bottle Cap Competition</a></li>
+        </ul>
+        </div>
+    </div>
+    <nav id="top">
+        <div><a href="index.html"><img id="logo" src="ecogroup.png" alt="logo"></a></div>
+        <div id="open"><button onclick="showmenu()" id="menu"><img id="hm" src="hamburger-menu.png" alt="menu"></button></div>
+        <div id="close"><button onclick="hidemenu()" id="menu"><img id="hm" src="cross.png" alt="menu"></button></div>
+    </nav>
+</body>
+    
+    </html>
+    <!menu>
     <style>
         #home{
             background-color: green;

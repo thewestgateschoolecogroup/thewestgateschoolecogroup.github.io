@@ -1,7 +1,7 @@
+
 const firebaseConfig = {
     apiKey: "AIzaSyDmu986kSeEoUFtY3kxfa18N4h_5__cqbE",
     authDomain: "feedback-form-a5e44.firebaseapp.com",
-    databaseURL: "https://feedback-form-a5e44-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "feedback-form-a5e44",
     storageBucket: "feedback-form-a5e44.appspot.com",
     messagingSenderId: "542710651524",
