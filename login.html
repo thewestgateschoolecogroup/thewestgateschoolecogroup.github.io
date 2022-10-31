@@ -133,7 +133,6 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="login.js"></script>
-
     <style>
         @media screen and (min-width: 1000px) {
 
@@ -312,12 +311,15 @@
         <div id="all">
             <div id="inlog">
                 <div id="flex1">
-                    <div><input type="email" placeholder="email" id="email"/></div>
-                    <div><input type="password" placeholder="password" id="password"/></div>
+                
+                    <input type="email" placeholder="email" id="email"/>
+                    <input type="password" placeholder="password" id="password"/>
+                
                     <p id="msg"></p>
                 </div>
                 <div id="flex2">
                     <button onclick="signIn()" id="signIN" class="btn"> Sign In </button>
+                 
                 </div>
             </div>
             <div id="flex3">

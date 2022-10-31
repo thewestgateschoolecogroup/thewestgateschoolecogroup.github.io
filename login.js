@@ -1,3 +1,4 @@
+
 const firebaseConfig = {
     apiKey: "AIzaSyCSI8i1NrF1K9u0K-kewGr9tME65liPCnA",
     authDomain: "eco-group-chart.firebaseapp.com",
@@ -21,6 +22,7 @@ function signIn(){
     
     document.getElementById("email").value = "";
     document.getElementById("password").value = "";
+    
 
 }
 
@@ -34,4 +36,7 @@ function update(){
 function signout(){
   auth.signOut()
   window.location.reload(); 
+  
 }
+
+
