@@ -214,7 +214,7 @@ const firebaseConfig = {
         var earth = (JSON.parse(caps[1].num))
         var fire = (JSON.parse(caps[2].num))
         var water = (JSON.parse(caps[3].num))
-        const datapoints = [earth, air, water, fire];
+        const datapoints = [earth, air, fire, water];
       const labels =  ['Earth','Air','Fire','Water']
       const backgroundColor = ["rgba(111,142,48,0.6)", 
           "rgba(86,60,117,0.6)", "rgba(147,38,36,0.6)", 
@@ -250,7 +250,7 @@ const firebaseConfig = {
       const data = {
         labels: lab,
         datasets: [{
-          label: " is Winning",
+          label: "Bottle Caps",
           backgroundColor: "white",
           data: dp,
           backgroundColor: bgc,

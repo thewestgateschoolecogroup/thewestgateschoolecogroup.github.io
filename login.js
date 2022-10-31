@@ -29,10 +29,9 @@ function update(){
   db.collection("caps").doc("Earth").update({num: earth.value});
   db.collection("caps").doc("Fire").update({num: fire.value});
   db.collection("caps").doc("Water").update({num: water.value});
-}
+  document.getElementById("msg2").innerHTML = "If you signed in chart should be updated."}
 
 function signout(){
-  document.getElementById("msg").innerHTML
   auth.signOut()
-
+  window.location.reload(); 
 }
