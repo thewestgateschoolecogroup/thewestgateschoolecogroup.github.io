@@ -16,10 +16,12 @@ function signIn(){
     var email = document.getElementById("email")
     var password = document.getElementById("password")
     const promise = auth.signInWithEmailAndPassword(email.value, password.value);
-
     document.getElementById("msg").innerHTML = "Successfully logged in"
     promise.catch(e => document.getElementById("msg").innerHTML = "Email or Password incorrect. Try again")
     
+    var lemail = firebase.auth().currentUser.email;
+      
+
     document.getElementById("email").value = "";
     document.getElementById("password").value = "";
     
