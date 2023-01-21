@@ -1,13 +1,14 @@
 <!menu>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
             @font-face {
                 font-family: Poppins-Bold;
                 src: url(Poppins-Bold.ttf);}
-            @media screen and (max-width: 600px){
+            @media only screen and (max-width: 600px) {
                 
-            }
+            
             body{
                 width: 100%;
                 margin:0px;
@@ -36,37 +37,120 @@
                 
             }
             #tabs{
+                visibility: visible;
                 width:100vw;
                 height: 19vw;
                 position:fixed;
                 bottom: 0;
                 background-color: rgba(193, 204, 122, 0.98);
+                border-style: solid;
 
             }
 
             .navimg{
-                height: 7vw;
-                margin-top: 3vw;
+                height: 6vw;
+                margin-top: 3.4vw;
             }
             ul{
+                margin: 0vw;
+                padding: 0vw;
                 list-style: none;
                 display: flex;
                 justify-content: space-around;
+                
+            }
+            #cur{
+                filter: invert(27%) sepia(30%) saturate(2878%) hue-rotate(110deg) brightness(104%) contrast(97%);
+            }
+        }
+        @media only screen and (min-width: 600px) {
+                
+            
+                body{
+                    width: 100%;
+                    margin:0px;
+                    padding:0px;
+    
+                }
+                #bar{
+                    margin-top: 0;
+                    width: 100vw;
+                    background-color: rgba(193, 204, 122, 0.98);
+                    height: 7vw;
+                    display: flex;
+                    justify-content: left;
+                    font-family: Poppins-Bold;
+                    font-size: 2.5vw;
+                    font-weight: 400;
+                    
+                }
+                #bar>img{
+                    margin-top: 1.7vw;
+                    margin-left: 1vw;
+                    height:4vw;
+                }
+                #bar>h1{
+                    margin-top: 4.4vw
+                    
+                }
+                #tabs{
+                    visibility: visible;
+                    width:100vw;
+                    height: 19vw;
+                    position:fixed;
+                    bottom: 0;
+                    background-color: rgba(193, 204, 122, 0.98);
+                    border-style: solid;
+                    visibility: hidden;
+    
+                }
+    
+                .navimg{
+                    height: 6vw;
+                    margin-top: 3.4vw;
+                }
+                ul{
+                    margin: 0vw;
+                    padding: 0vw;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-around;
+                    
+                }
+                #cur{
+                    filter: invert(27%) sepia(30%) saturate(2878%) hue-rotate(110deg) brightness(104%) contrast(97%);
+                }
+                #mob{
+                    visibility: hidden;
+                }
             }
         
+                
             
-    </style>
+            
+            </style>
 </head>
 <body>
     <div id="bar">
         <img src="blackeco.png"/>
-        <h1>save our planet</h1>
+        <h1 id="mob">save our planet</h1>
 
     </div>
     <div id="tabs">
         <ul>
-            <li><img class="navimg" src="house-solid.svg"></li>
-            <li><img class="navimg" src="house-solid.svg"></li>
+            <li><a href="index.html"><img id="cur" class="navimg" src="house-solid.svg"></a></li>
+            <li><a href="notice.html"><img class="navimg" src="newspaper-regular.svg"></a></li>
+            <li><a href="about.html"><img class="navimg" src="circle-info-solid.svg"></a></li>
+            <li><a href="competition.html"><img class="navimg" src="chart-column-solid.svg"></a></li>
+            
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="notice.html">Projects & Notices</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="competition.html">Competition</a></li>
         </ul>
     </div>
 </body>
