@@ -62,6 +62,10 @@
             #cur{
                 filter: invert(27%) sepia(30%) saturate(2878%) hue-rotate(110deg) brightness(104%) contrast(97%);
             }
+            #deskmenu{
+                visibility:hidden;
+                width: 0px;
+            }
         }
         @media only screen and (min-width: 600px) {
                 
@@ -77,30 +81,28 @@
                     width: 100vw;
                     background-color: rgba(193, 204, 122, 0.98);
                     height: 7vw;
+                    max-height: 70px;
                     display: flex;
-                    justify-content: left;
+                    justify-content: center;
+                    align-items: center;
                     font-family: Poppins-Bold;
                     font-size: 2.5vw;
                     font-weight: 400;
+                    flex-direction: row;
+
                     
                 }
                 #bar>img{
-                    margin-top: 1.7vw;
                     margin-left: 1vw;
                     height:4vw;
+                    max-width: 70px;
+                    max-height: 36px;
+                    position: relative;
                 }
-                #bar>h1{
-                    margin-top: 4.4vw
                     
-                }
                 #tabs{
-                    visibility: visible;
-                    width:100vw;
-                    height: 19vw;
-                    position:fixed;
-                    bottom: 0;
-                    background-color: rgba(193, 204, 122, 0.98);
-                    border-style: solid;
+                    width:0vw;
+                    height:0vw;
                     visibility: hidden;
     
                 }
@@ -114,7 +116,7 @@
                     padding: 0vw;
                     list-style: none;
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: space-between;
                     
                 }
                 #cur{
@@ -122,6 +124,19 @@
                 }
                 #mob{
                     visibility: hidden;
+                }
+                #deskmenu{ 
+                    font-family: Poppins-Bold;
+                    width: 60vw;
+                    max-width: 800px;
+                    margin-top: -1vw;
+                    margin-right: 30px;
+                }
+                .deskitem{
+                    font-size: medium;
+                    text-decoration: none;
+                    color: black;
+
                 }
             }
         
@@ -132,9 +147,16 @@
 </head>
 <body>
     <div id="bar">
-        <img src="blackeco.png"/>
+        <img id="logo" src="blackeco.png"/>
         <h1 id="mob">save our planet</h1>
-
+        <div>
+            <ul id="deskmenu">
+                <li><a class="deskitem" href="index.html">Home</a></li>
+                <li><a class="deskitem" href="notice.html">Projects & Notices</a></li>
+                <li><a class="deskitem" href="about.html">About</a></li>
+                <li><a class="deskitem" href="competition.html">Competition</a></li>
+            </ul>
+        </div>
     </div>
     <div id="tabs">
         <ul>
@@ -145,14 +167,7 @@
             
         </ul>
     </div>
-    <div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="notice.html">Projects & Notices</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="competition.html">Competition</a></li>
-        </ul>
-    </div>
+    
 </body>
 
     </html>
