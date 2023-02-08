@@ -1,13 +1,14 @@
 <!menu>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
             @font-face {
                 font-family: Poppins-Bold;
                 src: url(Poppins-Bold.ttf);}
-            @media screen and (max-width: 600px){
+            @media only screen and (max-width: 600px) {
                 
-            }
+            
             body{
                 width: 100%;
                 margin:0px;
@@ -36,11 +37,16 @@
                 
             }
             #tabs{
+                visibility: visible;
                 width:100vw;
-                height: 15vw;
+                height: 19vw;
                 position:fixed;
                 bottom: 0;
                 background-color: rgba(193, 204, 122, 0.98);
+                border-top: 3px;
+                border-left: 0px;
+                border-right: 0px;
+                border-bottom: 0px;
                 border-style: solid;
 
             }
@@ -60,15 +66,104 @@
             #cur{
                 filter: invert(27%) sepia(30%) saturate(2878%) hue-rotate(110deg) brightness(104%) contrast(97%);
             }
-        
+            #deskmenu{
+                visibility:hidden;
+                width: 0px;
+            }
+        }
+        @media only screen and (min-width: 600px) {
+                
             
-    </style>
+                body{
+                    width: 100%;
+                    margin:0px;
+                    padding:0px;
+    
+                }
+                #bar{
+                    margin-top: 0;
+                    width: 100vw;
+                    background-color: rgba(193, 204, 122, 0.98);
+                    height: 7vw;
+                    max-height: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: Poppins-Bold;
+                    font-size: 2.5vw;
+                    font-weight: 400;
+                    flex-direction: row;
+
+                    
+                }
+                #bar>img{
+                    margin-left: 1vw;
+                    height:4vw;
+                    max-width: 70px;
+                    max-height: 36px;
+                    position: relative;
+                }
+                    
+                #tabs{
+                    width:0vw;
+                    height:0vw;
+                    visibility: hidden;
+    
+                }
+    
+                .navimg{
+                    height: 6vw;
+                    margin-top: 3.4vw;
+                }
+                ul{
+                    margin: 0vw;
+                    padding: 0vw;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                }
+                #cur{
+                    filter: invert(27%) sepia(30%) saturate(2878%) hue-rotate(110deg) brightness(104%) contrast(97%);
+                }
+                #mob{
+                    visibility: hidden;
+                }
+                #deskmenu{ 
+                    font-family: Poppins-Bold;
+                    width: 60vw;
+                    max-width: 800px;
+                    margin-top: -1vw;
+                    margin-right: 30px;
+                }
+                .deskitem{
+                    font-size: medium;
+                    text-decoration: none;
+                    color: black;
+
+                }
+                #current{
+                    color: rgb(0, 124, 17);
+                }
+            }
+        
+                
+            
+            
+            </style>
 </head>
 <body>
     <div id="bar">
-        <img src="blackeco.png"/>
-        <h1>save our planet</h1>
-
+        <img id="logo" src="blackeco.png"/>
+        <h1 id="mob">save our planet</h1>
+        <div>
+            <ul id="deskmenu">
+                <li><a class="deskitem" href="index.html">Home</a></li>
+                <li><a class="deskitem" href="notice.html">Projects & Notices</a></li>
+                <li><a class="deskitem" href="about.html">About</a></li>
+                <li><a class="deskitem" id="current"href="competition.html">Competition</a></li>
+            </ul>
+        </div>
     </div>
     <div id="tabs">
         <ul>
@@ -79,6 +174,7 @@
             
         </ul>
     </div>
+    
 </body>
 
     </html>

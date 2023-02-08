@@ -180,14 +180,29 @@
     </html>
 <!menu>
 <style>
+
+    @media only screen and (min-width: 1500px) {
+        #main{
+            width:80vw;
+            margin-left: 10vw;
+            height: 100vw;
+            background-color: white;
+        }
+        body{
+            background-image:url(bg.png);
+        }
+
+    }
+    
     #title{
         font-family: Poppins-Bold;
-        font-size: 10vw;
+        font-size: 2rem;
         margin-left: 4vw;
         margin-top: 3vw;
     }
 </style>
-<html>
+<html id="content">
+    <div id="main">
     <h1 id = "title">Home</h1>
-    
+    </div>
 </html>
