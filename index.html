@@ -186,11 +186,10 @@
         #main{
             width:80vw;
             margin-left: 10vw;
-            height: 100vw;
             background-color: rgb(218, 255, 215);
             display: flex;
             justify-content: center;
-            margin-top: 10vw;
+            margin-top: 6vw;
         }
         body{
             background-image:url(bg.png);
@@ -198,10 +197,12 @@
         
     }
     #main{
-            height: 100vw;
-            background-color: rgb(218, 255, 215);
+            background-color: rgb(229, 255, 227);
             display: flex;
-            justify-content: center;
+            border-radius: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
         }
     html{
         overflow-x: hidden;
@@ -211,10 +212,42 @@
         font-size: 2rem;
         margin-left: 4vw;
         margin-top: 3vw;
+        }
+    #widget-container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    #spacr{
+        margin-top: 0;
+        width: 100vw;
+        height: 7vw;
+        max-height: 70px;
+    }
+    .wdig{
+        display: flex;
+        background-color: white;
+        overflow: hidden;
+        
+        }
+    .widg>h1{
+        font-family: Poppins-Bold;
+        font-size: 50;
     }
 </style>
+<div id="spacr">
+
+</div>
 <html id="content">
+
     <div id="main">
-    <h1 id = "title">Home</h1>
+        <h1 id = "title">Home</h1>
+        <div id="widget-container">
+            <div class="widg">
+                <h1>Welcome to Eco Group!</h1>
+            </div>
+        </div>
     </div>
+    
 </html>
