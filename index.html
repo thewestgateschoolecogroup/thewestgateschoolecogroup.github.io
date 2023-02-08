@@ -181,7 +181,12 @@
     </html>
 <!menu>
 <style>
-
+    @media only screen and (max-width: 600px) {
+        #wdtitle{
+        width:100%;
+        align-self: center;
+    }
+}
     @media only screen and (min-width: 1500px) {
         #main{
             width:80vw;
@@ -196,6 +201,20 @@
         }
         
     }
+    @media screen and (max-width:1000px) {
+        .widget-2{
+            flex-direction: column;
+        }
+        .wdgt-img-mob{
+            width: 90vw;
+        }
+        
+    }
+    @media screen and (min-width:1000px) {
+        .wdgt-img-mob{
+            width: 50vw;
+        }
+    }
     #main{
             background-color: rgb(229, 255, 227);
             display: flex;
@@ -203,21 +222,27 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
+            gap: 4vw;
         }
     html{
         overflow-x: hidden;
     }
     #title{
+        text-align: center;
         font-family: Poppins-Bold;
-        font-size: 2rem;
+        font-size: 4rem;
         margin-left: 4vw;
         margin-top: 3vw;
         }
-    #widget-container{
+    .widget-container{
         width: 90%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 30px;
+        background-color: rgb(240, 255, 213);
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px;
     }
     #spacr{
         margin-top: 0;
@@ -229,12 +254,48 @@
         display: flex;
         background-color: white;
         overflow: hidden;
+        justify-content: space-around;
         
         }
-    .widg>h1{
+    .widg>#wdtitle>h1{
         font-family: Poppins-Bold;
-        font-size: 50;
+        font-size: 30;
     }
+    .widg>#wdtitle>h3{
+        font-family: Poppins-Bold;
+        font-size: 15;
+    }
+    .wdtitle{
+        display: flex;
+        flex-direction: row;
+    }
+    h1{
+        font-family: Poppins-Bold;
+    }
+    h3{
+        font-family: Poppins-Bold;
+    }
+    .widget-2{
+        width: 90%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px;
+        display: flex;
+        overflow: hidden;
+        
+    }
+    .wdgt-text{
+        width:100%;
+        background-color:rgb(255, 255, 255);
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .wdgt-image{
+        width:100%;
+        background-color:rgb(255, 255, 255);
+        
+    }
+    
 </style>
 <div id="spacr">
 
@@ -243,10 +304,21 @@
 
     <div id="main">
         <h1 id = "title">Home</h1>
-        <div id="widget-container">
+        <div class="widget-container">
             <div class="widg">
-                <h1>Welcome to Eco Group!</h1>
+                <div id="wdtitle"><h1>Welcome to Eco Group!</h1><h3>We meet in T2 every Thursday at break time</h3></div>
             </div>
+        </div>
+        <div class="widget-2">
+            <div class="wdgt-text">
+                <h1>About Us</h1>
+                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nulla qui, blanditiis quaerat quia doloribus nobis, dolorem incidunt... <a style="color: blue;", href="about.html">Read More ></a></h3>
+            </div>
+            <div class="wdgt-image">
+                <img class="wdgt-img-mob" src="ourteam.jpg" alt="">
+            </div>
+
+
         </div>
     </div>
     
