@@ -178,5 +178,168 @@
     
 </body>
 
-    </html>
+</html>
 <!menu>
+<style>
+    @media only screen and (max-width: 600px) {
+        #wdtitle{
+        width:100%;
+        align-self: center;
+    }
+}
+    @media only screen and (min-width: 1500px) {
+        #main{
+            width:80vw;
+            margin-left: 10vw;
+            background-color: rgb(218, 255, 215);
+            display: flex;
+            justify-content: center;
+            margin-top: 6vw;
+        }
+        .single-image{
+            height: 41vw;
+        }
+        body{
+            background-image:url(bg.png);
+        }
+        
+    }
+    @media only screen and (max-width: 1500px) {
+        .single-image{
+            height: 51vw;
+        }
+    }
+    @media screen and (max-width:1000px) {
+        .widget-2{
+            flex-direction: column;
+        }
+        .wdgt-img-mob{
+            width: 90vw;
+        }
+        
+    }
+    @media screen and (min-width:1000px) {
+        .wdgt-img-mob{
+            width: 50vw;
+        }
+    }
+    #main{
+            background-color: rgb(229, 255, 227);
+            display: flex;
+            border-radius: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4vw;
+            
+        }
+    html{
+        overflow-x: hidden;
+    }
+    .title{
+        text-align: center;
+        font-family: Poppins-Bold;
+        font-size: 4rem;
+        margin-left: 4vw;
+        margin-top: 3vw;
+        }
+    .widget-container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        background-color: rgb(240, 255, 213);
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px;
+        text-align: center;
+    }
+    #spacr{
+        margin-top: 0;
+        width: 100vw;
+        height: 7vw;
+        max-height: 70px;
+    }
+    .wdig{
+        display: flex;
+        background-color: white;
+        overflow: hidden;
+        justify-content: space-around;
+        
+        }
+    .widg>#wdtitle>h1{
+        font-family: Poppins-Bold;
+        font-size: 30;
+    }
+    .widg>#wdtitle>h3{
+        font-family: Poppins-Bold;
+        font-size: 15;
+    }
+    .wdtitle{
+        display: flex;
+        flex-direction: row;
+    }
+    h1{
+        font-family: Poppins-Bold;
+    }
+    h3{
+        font-family: Poppins-Bold;
+        width: 97%;
+    }
+    h2{
+        font-family: Poppins-Bold;
+        width: 97%;
+    }
+    .widget-2{
+        width: 90%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px;
+        display: flex;
+        overflow: hidden;
+        
+    }
+    .wdgt-text{
+        width:100%;
+        background-color:rgb(255, 255, 255);
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .wdgt-image{
+        width:80vw;
+        background-color:rgb(255, 255, 255);
+        
+    }
+    #bottomspace{
+        height: 150px;
+    }
+    
+    
+</style>
+<div id="spacr">
+
+</div>
+<html id="content">
+
+    <div id="main">
+        <h1 class = "title">About Us</h1>
+        
+        <div class="widget-2">
+            <div class="wdgt-text">
+                
+                <h2>We at Westgate school aspire to help our community in any way we can. One of these ways is helping the environment through ‘Eco Group’ which involves our students working together to save our planet. We do this through many ways, such as raising money for charity, creating awareness about what is happening to our planet and trying to make our school as environmentally friendly as possible. At
+                    Westgate, we have seen what is happening to our world and decided to value solution, not pollution.</h2>
+            </div>
+        </div>
+        <div class="widget-2">
+            <div class="wdgt-image">
+                <img class="single-image" src="ourteam.jpg"></img>
+            </div>
+             
+        </div>
+        <h1 class = "title">Our Goals</h1> 
+        
+    </div>
+    <div id="bottomspace"></div>
+    
+</html>
