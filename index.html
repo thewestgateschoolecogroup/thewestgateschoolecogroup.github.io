@@ -17,7 +17,7 @@
             }
             #bar{
                 margin-top: 0;
-                width: 100vw;
+                width: 100%;
                 background-color: rgba(193, 204, 122, 0.98);
                 height: 17vw;
                 display: flex;
@@ -25,6 +25,7 @@
                 font-family: Poppins-Bold;
                 font-size: 2.5vw;
                 font-weight: 400;
+                overflow-y: hidden;
                 
             }
             #bar>img{
@@ -84,7 +85,6 @@
                     margin-top: 0;
                     width: 100vw;
                     background-color: rgba(193, 204, 122, 0.98);
-                    height: 7vw;
                     max-height: 70px;
                     display: flex;
                     justify-content: center;
@@ -94,6 +94,7 @@
                     font-weight: 400;
                     flex-direction: row;
                     position: fixed;
+                    overflow-x: hidden;
 
                     
                 }
@@ -195,6 +196,7 @@
             display: flex;
             justify-content: center;
             margin-top: 6vw;
+            
         }
         body{
             background-image:url(bg.png);
@@ -208,31 +210,42 @@
         .wdgt-img-mob{
             width: 90vw;
         }
-        
+        #main{
+            margin-top: -41;
+            border-radius: 0px !important;
+        }
     }
     @media screen and (min-width:1000px) {
         .wdgt-img-mob{
             width: 50vw;
         }
+        #main{
+            border: black 5px;
+        }
     }
     #main{
-            background-color: rgb(229, 255, 227);
+            background: rgb(124,253,45);
+            background: linear-gradient(0deg, rgba(37, 167, 76, 0.801) 0%, rgba(34, 195, 168, 0.800) 100%);
             display: flex;
             border-radius: 20px;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
             gap: 4vw;
+            border-width: 10px !important;
+            border-color: black !important;
+            border-style: solid;
             
         }
-    html{
+    html body{
         overflow-x: hidden;
     }
+
     #title{
         text-align: center;
         font-family: Poppins-Bold;
         font-size: 4rem;
-        margin-left: 4vw;
+        margin-left: 0px;
         margin-top: 3vw;
         }
     .widget-container{
@@ -243,12 +256,11 @@
         gap: 30px;
         background-color: rgb(240, 255, 213);
         border-radius: 15px;
-        box-shadow: 0px 0px 10px;
         text-align: center;
     }
     #spacr{
         margin-top: 0;
-        width: 100vw;
+        width: 0vw;
         height: 7vw;
         max-height: 70px;
     }
@@ -282,7 +294,6 @@
         width: 90%;
         background-color: rgb(255, 255, 255);
         border-radius: 15px;
-        box-shadow: 0px 0px 10px;
         display: flex;
         overflow: hidden;
         
